@@ -1,0 +1,232 @@
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <font face="Arial,Helvetica,sans-serif">
+        <h1>Aprendendo HTML</h1>
+
+        <p>O artigo a seguir terá como conteúdo itens básicos para o entendimeto da estrutura de uma página HTML.</p>
+
+        <p>Seguirei a ordem da lista a seguir, caso tenha ja possia conhecimento em algum item da lista, pode clicar no
+            outro que você será direcionado para o assunto que mais lhe interessa.</p>
+
+        <ul>
+            <li><a href="#voltar01" id="menu01">O que é HTML?</a></li>
+            <li><a href="#voltar02" id="menu02">Estrutura básica - As tags HTML, HEAD e BODY</a></li>
+            <li><a href="#voltar03" id="menu03">Porque usar Tags e quais os tipos?</a></li>
+            <li><a href="#voltar04" id="menu04">Tag de parágrafo e quebra de linha</a></li>
+            <li><a href="#voltar05" id="menu05">Tag de título</a></li>
+        </ul>
+
+        <hr>
+
+
+        <h2 id="voltar01">O que é HTML?</h2>
+        <a href="#menu01"><small>(voltar)</small></a>
+
+        <p>Criada em 1989 pelo cientista britanico Tim Berners-Lee, a Linguagem de Marcação de Hipertexto, ou Hypertext
+            Markup Language (HTML), era usada para criar e exibir conteúdo na Web quando Berners desenvolveu a ideia da
+            Word Wide Web.</p>
+
+        <p>O HTML só teve sua primeira versão realmente lançada em 1991 que, diferente de sua vesão anterior não
+            ocifial, possuia tags basicas para formatação de texto, como H1 para títulos, P para parágrafos, I para
+            italico e B para negrito, além de incluir imagens, mesmo que em preto e branco.</p>
+
+        <p>Passando por significativas mudanças em suas versões, a 2.0 de 1995 incluia suprte a tabelas, a 3.0 de 1997
+            já permitia o uso de CSS e elementos multimidia como video e som, a versão 4.0 de 1999 inseriu novos recuros
+            para tabelas, introduziu o IFrame e suporte a scripts em Java Script, além de incluir especificações de
+            XHTML que combinava o XML com HTML.</p>
+
+        <p> Em 2000 o W3C (World Wide Web Consortium) lançou o HTML 4.01, que era uma atualização menor do HTML 4.0,
+            corrigindo alguns erros e inconsistências.</p>
+
+        <p>Em 2004, o desenvolvimento do HTML foi retomado com a criação do grupo de trabalho HTML da W3C. Esse grupo
+            trabalhou no desenvolvimento do HTML5, que foi lançado em 2014. O HTML5 incluiu muitos novos recursos, como
+            elementos semânticos (como ARTICLE e SECTION), suporte para vídeo e áudio mais avançados, geolocalização e
+            capacidade de armazenamento local.</p>
+
+        <p>Desde então, o HTML5 se tornou a versão mais utilizada do HTML e é suportado por todos os principais
+            navegadores da web. Além disso, o HTML5 continua a ser atualizado com novos recursos e funcionalidades para
+            acompanhar as demandas em constante evolução da web.</p>
+
+        <hr>
+
+        <h2 id="voltar02">Estrutura básica - As tags HTML, HEAD e BODY</h2>
+        <a href="#menu02"><small>(voltar)</small></a>
+
+        <p>Uma pagina web é estruturada por três tags principais:</p>
+
+        <ul>
+            <li><strong>
+                    < HTML>
+                </strong> - Tag principal, indica o inicio <strong>
+                    < html>
+                </strong> e o fim <strong>
+                    < / html>
+                </strong> do documento;</li>
+            <li><strong>
+                    < HEAD>
+                </strong> - É o cabecãlho da página, entre sua abertura <strong>
+                    < head>
+                </strong> e fechamento
+                <strong>
+                    < / head>
+                </strong> é onde são inseridos as metatags e os links de carregamento de recursos que
+                precisam ser iniciados antes do conteúdo ser exibido.
+            </li>
+            <li><strong>
+                    < BODY>
+                </strong> - É onde é inserido tudo que deve ser exibido pelo usuário e possui também uma abertura
+                <strong>
+                    < body>
+                </strong> e um fechamento <strong>
+                    < / body>
+                </strong>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2 id="voltar03">Porque usar Tags e quais os tipos?</h2>
+        <a href="#menu03"><small>(voltar)</small></a>
+
+        <p>
+            Uma tag é usada para definir a formatação em um documento HTML, é a marcação usada para o navegador endender
+            onde uma linha precisa ser quebrada, quando um texto deve estar em negrito e quantas linhas e colunas uma
+            tabela
+            deve possuir. </p>
+        <p>Ao usar as Tags, estou determinando como o os objetos da página irão aparecer.</p>
+        <p>Existem, basicamente dois tipos de tags:</p>
+        <ul>
+            <li>Com fechamento: Elas delimitam o espaço de ação da formatação, por exemplo, em um texto em negrito, uso
+                a
+                tag STRONG, abrindo antes e fechando depois de uma palabra ou frase que eu desejo "negritar", então eu
+                uso
+                <strong>
+                    < strong> texto < /strong>
+                </strong>, o mesmo para o itálico, ou a tag I, <strong>
+                    < i> texto < /i>
+                </strong>
+            </li>
+            <ul>
+                <li>Exemplo de Texto com STRONG aplicado: <strong>Texto</strong> </li>
+                <li>Exemplo de Texto com I (italico) applicado: <i>Texto</i> </li>
+            </ul>
+            <li>Sem fechamento: Determinam que onde foram inseridas é o local que deve aparecer alguma objeto, a tag de
+                inserção de imagem < img>, de campo de formulário < input> e de linha horizontal < hr> são exemplos de
+                            tag que não possuem fechamento;</li>
+            <ul>
+                <li>Exemplo de inserção de imagem: <img width="80px"
+                        src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg"> </li>
+                <li>Exemplo de inserção de campo de formulário: <input type="text"> </li>
+            </ul>
+        </ul>
+        <blockquote>
+            <p>As tags por si só já permitem uma organização na página HTML, mas ainda precisam dos chamados parâmetros
+                que,
+                podem ser exclusivos, com no caso da tag INPUT, que possui o parêmetro TYPE que determina se será um
+                campo de
+                texto, de senha, de email, de telefone e outros tipos.</p>
+            <p>Mas exsitem os parâmetros que são comuns para todas as tags, como ID que determina uma itentificação da
+                tag para facilitar na hora de trabahar com CSS, o Class que permite que seja definida uma classe CSS
+                para a tag, STYLE que permite o uso de CSS inline.</p>
+        </blockquote>
+
+        <hr>
+        <h2 id="voltar04">Tag de parágrafo e quebra de linha</h2>
+        <a href="#menu04"><small>(voltar)</small></a>
+
+        <p>Ao escrever em um documento HTML, o navegador não entenderá se for dado enter quando quero mudar de linha.
+            Então o HTML possui uma tag para isso, que é o BR <strong>
+                < br>
+            </strong>, que onde for colocado o navegador entenderá que ali termina uma linha e precisa continuar na de
+            baixo. </p>
+        <mark><strong>OBS:</strong> O BR não precisa ser fechado</mark>
+        <p>O mesmo ocorre com um parágrafo, o navegador não entende quando começa e termina um parágrafo, então é usado
+            o <strong>
+                < p>
+            </strong> para iniciar um parágrafo e o <strong>
+                < / p>
+            </strong> para fecha-lo, isso define que cada bloco de texto com essa tag é um parágrafo.</p>
+
+
+        <p><u><strong>Segue abaixo um texto onde a cada duas palavras foi usado o BR:</strong></u></p>
+        As cada <br>
+        duas palavras <br>
+        foi usado <br>
+        o <strong>
+            < br>
+        </strong> para <br>
+        mudar de linha <br>
+
+        <p><u><strong>Agora um texto com três parágrafos usando o P:</strong></u></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna lectus, pretium vel lacus eget,
+            laoreet maximus metus. Aliquam varius accumsan malesuada. Maecenas condimentum nulla sit amet felis tempus
+            consequat. Etiam maximus sit amet ipsum at congue.</p>
+        <p> Pellentesque blandit metus ac neque posuere, in venenatis orci feugiat. Proin sollicitudin, nibh vitae
+            fringilla accumsan, nulla mi blandit odio, sed congue urna felis vitae urna. Praesent vehicula mi eu finibus
+            scelerisque. Mauris justo lacus, mollis vitae auctor ut, elementum vitae tortor. </p>
+        <p>In posuere enim sit amet fermentum rhoncus. In nec rutrum libero, nec egestas justo. Proin posuere mattis ex,
+            quis lobortis turpis tempor dapibus.</p>
+
+        <hr>
+        <h2 id="voltar05">Tag de titulo e subtitulos</h2>
+        <a href="#menu05"><small>(voltar)</small></a>
+
+        <p>Todo documento possui título e pelo menos um sub-título, em um documento HTML não é diferente.</p>
+        <p>A Tag usada para definir titulos e sub-titulos é o H que tem níveis que vão do 1 ao 6, onde o 1 é o maio e o
+            6 o menor:</p>
+        <ul>
+            <li><strong>
+                    < h1> ... < / h1>
+                </strong></li>
+            <li><strong>
+                    < h2> ... < / h2>
+                </strong></li>
+            <li><strong>
+                    < h3> ... < / h3>
+                </strong></li>
+            <li><strong>
+                    < h4> ... < / h4>
+                </strong></li>
+            <li><strong>
+                    < h5> ... < / h5>
+                </strong></li>
+            <li><strong>
+                    < h6> ... < / h6>
+                </strong></li>
+        </ul>
+
+        <p><u><strong>Exemplo do uso da tag H:</strong></u></p>
+
+        <ul>
+            <li>
+                <h1> Titulo H1 </h1>
+            </li>
+            <li>
+                <h2> Titulo H2 </h2>
+            </li>
+            <li>
+                <h3> Titulo H3 </h3>
+            </li>
+            <li>
+                <h4> Titulo H4 </h4>
+            </li>
+            <li>
+                <h5> Titulo H5 </h5>
+            </li>
+            <li>
+                <h6> Titulo H6 </h6>
+            </li>
+        </ul>
+
+        <hr>
+    </font>
+</body>
+
+</html>
